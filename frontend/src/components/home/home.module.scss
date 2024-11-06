@@ -1,0 +1,146 @@
+
+
+
+
+
+$greenColor: green;
+$mixColorForm: linear-gradient(skyblue 45%, whitesmoke 50%);
+$fontSize: 1rem;
+$doubleFontSize:1.5rem;
+$textPosition: center;
+$margin: 0 auto;
+$height: 480px;
+$padding: 0.9em 3em;
+$border: 1px solid black;
+$noneOutline: none;
+$bRadius: 10px;
+$labelColor:black;
+$whiteColor:white;
+$marginTop: 60px;
+
+
+
+body {
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+
+}
+
+
+
+
+.button {
+    text-align: center;
+    padding:0.8em 3em;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    color:$whiteColor;
+    background:$labelColor;
+    border-radius: $bRadius;
+    margin-top: -20px;
+
+    .message {
+        padding: $padding;
+    }
+    &:hover {
+        background:$greenColor
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: $marginTop;
+    
+}
+
+
+.header {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  gap:30px;
+  text-align: $textPosition;
+  margin:$margin;
+  height: $height;
+  text-align: center;
+  border: $border;
+  border-radius: $bRadius;
+  width: 550px;
+
+  &:hover {
+    background:$mixColorForm
+  }
+
+
+}
+
+
+.label {
+    color:$labelColor;
+    font-size: $fontSize;
+    text-align: $textPosition;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.textarea {
+    padding:$padding;
+    text-align: center;
+}
+
+
+.homepagebackground {
+    background:url('../images/epxressjsbackground.png');
+    background-size: contain;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    animation-name: expressjs;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+
+@keyframes expressjs {
+    0% {background:url('../images/nodejsbackground.jpg');
+        background-size: contain;
+        background-position: right;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    };
+
+    50% {background:url('../images/epxressjsbackground.png');
+        background-size: contain;
+        background-position: right;
+        background-attachment: fixed;
+        background-repeat: no-repeat;    
+    }
+}
