@@ -66,9 +66,9 @@ const Home:React.FC = () => {
                 <div className={styles.label}><label htmlFor='email-subject'>Email Subject</label></div>
                 <div><input style={{textAlign: 'center', padding: '1em 2em'}} ref={inputLoginRef} className={styles.message} onChange={(e) => setEmailSubject(e.target.value)} type='text' name="login" value={emailSubject} placeholder='Subject Line' required></input></div>
                 <div className='message'><label htmlFor='email-friend'>Friend Email</label></div>
-                <div><input style={{textAlign: 'center', padding:'1em 2em'}} onChange={(e) => setEmailTo(e.target.value)} type='email' value={emailTo} placeholder='Friend Email' required></input></div>
+                <div><input style={{textAlign: 'center', padding:'1em 0.9em'}} onChange={(e) => setEmailTo(e.target.value)} type='email' value={emailTo} placeholder='Friend Email' required></input></div>
                 <div className='message'><label htmlFor='email-message'>Message</label></div>
-                <div><textarea style={{textAlign: 'center'}} onChange={(e) => setEmailText(e.target.value)} cols={50} rows={3} value={emailText} placeholder='Message' required></textarea></div>
+                <div><textarea style={{textAlign: 'center'}} onChange={(e) => setEmailText(e.target.value)} cols={30} rows={3} value={emailText} placeholder='Message' required></textarea></div>
                    <div className={styles.button}> <button style={{color:'black', padding:'0.5em 0.9em', border: 'none', fontSize: '1rem', fontFamily: 'times new roman'}} type='submit'>Send Email</button></div>
             </form>
         </div>
