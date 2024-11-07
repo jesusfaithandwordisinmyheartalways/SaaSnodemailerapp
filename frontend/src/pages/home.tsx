@@ -19,7 +19,7 @@ const Home:React.FC = () => {
     const UserSendEmail = async (e:React.FormEvent) => {
             e.preventDefault()
             try {
-                const response = await fetch(`/backend/api/submit.js`, {
+                const response = await fetch(`/api/submit.js`, {
                     method:'POST',
                     headers: {
                         'Content-Type': 'application/json',
