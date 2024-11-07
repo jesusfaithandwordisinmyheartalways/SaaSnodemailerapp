@@ -2,16 +2,12 @@
 
 
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "backend/api/submit.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      { "src": "/api/submit", "dest": "backend/api/submit.js" },
-      { "src": "/(.*)", "dest": "/index.html" }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    { "src": "backend/api/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "backend/api/$1.js" }
+  ]
+}
   
