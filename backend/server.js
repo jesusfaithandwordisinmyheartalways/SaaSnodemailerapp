@@ -10,7 +10,7 @@ const app = express()
    
 
 console.log('EMAIL USER', process.env.EMAIL_USER);
-console.log('EMAIL PASSWORD', process.env.EMAIL_PASSWORD)
+console.log('EMAIL PASSWORD', process.env.EMAIL_PASSWORD);
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -52,7 +52,7 @@ app.get('/', (req, res) =>{
 
 
 
-const SERVER_PORT_NUMBER = process.env.PORT ||  6008
+const SERVER_PORT_NUMBER = process.env.PORT ||  8005
 app.listen(SERVER_PORT_NUMBER, () =>{
     console.log(`server is on: ${SERVER_PORT_NUMBER}`)
 })
